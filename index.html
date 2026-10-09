@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fffaf5">
+<title>a little world of anne ♡</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%97%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sky" aria-hidden="true"></div>
+<div class="floaters" id="floaters" aria-hidden="true"></div>
+
+<header class="hero" id="top">
+  <h1 class="hero-title">a little world of anne <span class="heart-mark" aria-hidden="true">♡</span></h1>
+  <p class="hero-sub">six months of my favorite girl</p>
+  <p class="hero-small">made with love, just for u babyyy 🥹❤️</p>
+  <a class="btn" href="#gallery" id="enter">come in ♡</a>
+  <div class="fan" id="fan"></div>
+</header>
+
+<nav class="bar" aria-label="memories">
+  <button type="button" class="rand" id="randomBtn">pick a random memory ♡</button>
+  <ul class="chips" id="chips"></ul>
+</nav>
+
+<main id="gallery">
+  <noscript><p class="noscript">this little world needs javascript to open, babyyy 🥺</p></noscript>
+</main>
+
+<section class="notes" id="notes" aria-labelledby="notes-title">
+  <h2 id="notes-title" class="sec-title">little love notes 💌</h2>
+  <div class="envelopes" id="envelopes"></div>
+</section>
+
+<section class="ending" id="ending" aria-labelledby="end-title">
+  <h2 id="end-title" class="end-title">and after all these pictures… i'd still choose u ❤️</h2>
+  <p class="end-text">happy six months babyyy 🥹❤️
+
+thank u for being my girl and for all the little moments that make u uuu
+
+the distance between morocco and the philippines isn't always easyyy but i'm so happy it's u i'm doing this with
+
+if i could choose again i'd still choose u anneee 🫶🏻</p>
+  <p class="signature">ur boy, mohammed ♡</p>
+</section>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="photo viewer" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <figure class="modal-card">
+    <button type="button" class="ctl close" id="mClose" aria-label="close">✕</button>
+    <div class="modal-img" id="mImgWrap"><img id="mImg" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div>
+    <figcaption class="modal-cap">
+      <p class="modal-cat" id="mCat"></p>
+      <p class="modal-msg" id="mMsg"></p>
+    </figcaption>
+    <div class="modal-nav">
+      <button type="button" class="ctl" id="mPrev" aria-label="previous photo">‹</button>
+      <span class="modal-count" id="mCount" aria-live="polite"></span>
+      <button type="button" class="ctl" id="mNext" aria-label="next photo">›</button>
+    </div>
+  </figure>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
